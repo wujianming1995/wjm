@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="">
+	<style>
+	#main{width: 500px;
+		height: 500px;
+		border: 2px solid black;
+		margin-left:500px; 
+                      }
+                      table{
+                      	width: 350px;
+                      	height: 350px;
+                      }
+                      #result{
+                      	width: 130px;
+                      	height: 50px;
+                      	border: 1px solid black;
+                      	text-align: center;
+
+                      }
+
+
+	</style>
+</head>
+	
+
+<body>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<div id="main">
+
+	<p>简单计算器:</p>
+<table>
+	<tr>
+		<td>第一个数</td>
+		<td><input type="text", id="first"></td>
+	</tr>
+	<tr>
+		<td>第二个数</td>
+		<td><input type="text", id="twice"></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<button onclick="jia()" style="width:50px;height:50px"><h1>+</h1></button>
+		&nbsp
+		&nbsp
+		&nbsp
+		&nbsp
+		&nbsp
+	          
+		<button onclick="jian()" style="width:50px;height:50px"><h1>-</h1></button>&nbsp
+		&nbsp
+		&nbsp
+		&nbsp
+		&nbsp
+		<button  onclick="chen()" style="width:50px;height:50px"><h1>*</h1></button>
+		&nbsp
+		&nbsp
+		&nbsp
+		&nbsp
+		&nbsp
+		<button onclick="chu()" style="width:50px;height:50px"><h1>/</h1></button>
+		</td>
+	</tr>
+            <tr>
+		<td>结果=</td>
+		<td> <div id="result"></div></td>
+	</tr>
+</table>
+
+<script>
+var result_1
+
+function jia(){
+	var a=getfirstnumber();
+	var b=gettwicenumber();
+	var re=Number(a)+Number(b);
+	sendresult(re);}
+function jian(){
+	var a=getfirstnumber();
+	var b=gettwicenumber();
+	var re=a-b;
+	sendresult(re);}
+function chen(){
+	var a=getfirstnumber();
+	var b=gettwicenumber();
+	var re=a*b;
+	sendresult(re);}
+function chu(){
+	var a=getfirstnumber();
+	var b=gettwicenumber();
+	var re=a/b;
+	sendresult(re);}
+function sendresult(result_1){
+		var num=document.getElementById("result")
+		num.innerHTML=result_1
+	}
+
+function getfirstnumber(){
+		var firstnumber=document.getElementById("first").value
+		return firstnumber
+	}
+	
+function gettwicenumber(){
+		var twicenumber=document.getElementById("twice").value
+		return twicenumber
+	}
+
+
+</script>	
+
+</div>
+</body>
+</html>
