@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+    
+	#red1{
+		height: 600px;
+		width: 600px;
+		background-color: #D33D5A;
+		position: relative;
+		border-radius: 50%;
+	                 }
+	#white1{
+		height: 500px;
+		width: 500px;
+		background-color: #FFFFFF;
+		position: absolute;
+                     top: 0;
+                     bottom: 0;
+                      left: 0;
+                      right: 0;
+                      margin: auto;
+                      border-radius: 50%;
+		}
+		#red2{
+			height: 400px;
+			width: 400px;
+			background-color: #D33D5A;
+			position: absolute;
+                                  top: 0;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                 margin: auto;
+                                border-radius: 50%;
+
+		}
+		#blue1{
+			height: 300px;
+			width: 300px;
+			background-color: #246AB2;
+			position: absolute;
+                                  top: 0;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                 margin: auto;
+                                 border-radius: 50%;
+                                }
+      #star-five{
+width: 0;
+height: 0;
+margin: 50px 0;
+position: relative;
+display: block;
+border-left: 100px solid transparent;
+border-right: 100px solid transparent;
+border-bottom: 70px solid #FFFFFF;
+-moz-transfrom:rotate(35deg);
+-webkit-transform:rotate(35deg);
+-ms-transform:rotate(35deg);
+-o-transform:rotate(35deg);
+}
+   
+   
+
+
+
+#star-five:before{
+width: 0;
+height: 0;
+border-left: 30px solid transparent;
+border-right: 30px solid transparent;
+border-bottom: 80px solid #FFFFFF;
+position: absolute;
+top: -45px;
+left: -65px;
+display: block;
+content: "";
+-moz-transform:rotate(-35deg);
+-webkit-transform:rotate(-35deg);
+-ms-transform:rotate(-35deg);
+-o-transform:rotate(-35deg); 
+}
+#star-five:after{
+width: 0;
+height: 0;
+display: block;
+position: absolute;
+top: 3px;
+left: -105px;
+border-left: 100px solid transparent;
+border-right: 100px solid transparent;
+border-bottom: 70px solid #FFFFFF;
+content: "";
+-moz-transform:rotate(-70deg);
+-webkit-transform:rotate(-70deg);
+-ms-transform:rotate(-70deg);
+-o-transform:rotate(-70deg);
+}
+		#star{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+                                  top: 0;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                 margin: auto;
+                            -webkit-animation:play 5s linear infinite;
+                            -moz-animation:play 5s linear infinite;
+                            animation:play 5s linear infinite;
+                                 }
+
+                                 @-webkit-keyframes play{
+                                 0%  {
+                                             -webkit-transform:rotate(0deg);
+                                                        }
+                                100% {
+                                           -webkit-transform:rotate(360deg);}
+</style>
+</head>
+<body>
+	<div id="red1">
+	          <div id="white1">
+			<div id="red2">
+				<div id="blue1">
+					
+					<div id="star">
+					<div id="star-five">
+						</div>
+					          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
